@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Calcukator</title>
+</head>
+
+<body>
+    <input type="text" id="dis">
+    <div id="buttons">
+        <button class="num-btn">1</button>
+        <button class="num-btn">2</button>
+        <button class="num-btn">3</button>
+        <button class="num-btn">4</button>
+        <button class="num-btn">5</button>
+        <button class="num-btn">6</button>
+        <button class="num-btn">7</button>
+        <button class="num-btn">8</button>
+        <button class="num-btn">9</button>
+        <button class="num-btn">0</button>
+        <button class="num-btn">+</button>
+        <button class="num-btn">-</button>
+        <button class="num-btn">*</button>
+        <button class="num-btn">/</button>
+        <button class="num-btn">=</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let display = document.getElementById("dis")
+    let dis = ""
+    let buttons = document.getElementsByClassName("num-btn");
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", () => {
+
+            if (buttons[i].innerText === "=") {
+                dis = eval(display.value)
+                display.value = dis;
+            } else {
+                dis += buttons[i].innerText;
+                display.value = dis;
+            }
+
+
+        })
+    }
+</script>

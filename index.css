@@ -1,0 +1,35 @@
+*{
+    text-align: center;
+}
+
+
+.num-btn{
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#buttons{
+    cursor: pointer;
+    width: 240px;
+    margin-top: 20px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: repeat(5,70px);
+}
+
+#dis{
+    width: 240px;
+    border-radius: 25px;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+}
